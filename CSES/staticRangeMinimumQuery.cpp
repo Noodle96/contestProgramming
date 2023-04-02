@@ -26,15 +26,6 @@ int query(int L, int R){
 		return lookup[R - (1 << j) + 1][j];
 }
 int main(){
-    // LL a[] = { 7, 2, 3, 0, 5, 10, 3, 12, 18 };
-	// int n = sizeof(a) / sizeof(a[0]);
-
-	// buildSparseTable(a, n);
-
-	// cout << query(0, 4) << endl;
-	// cout << query(4, 7) << endl;
-	// cout << query(7, 8) << endl;
-
     vector<LL> vec;
     LL n,q,temp;
     LL a,b;

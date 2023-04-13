@@ -1,6 +1,8 @@
 // Extracted of GeekForGeeks
 // C++ program to print all primes smaller than or equal to
 // n using Sieve of Eratosthenes
+// Time Complexity: O(n*log(log(n)))
+// Auxiliary Space: O(n)
 #include <bits/stdc++.h>
 using namespace std;
 

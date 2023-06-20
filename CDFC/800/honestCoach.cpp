@@ -18,6 +18,10 @@ void solve(){
 	// vec.clear();
 }
 int main(){
+	#ifndef IN_OUT
+        freopen("input.txt","r",stdin);
+        freopen("output.txt","w",stdout);
+    #endif
 	int t; cin>>t;
 	while(t--){
 		solve();

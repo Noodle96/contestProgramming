@@ -6,6 +6,15 @@ void solve(){
 	string english, foreign,linea;
 	map<string,string> mapa;
 	std::getline(cin,linea);
+	//primer while hasta que detecte una linea en blanco:
+	//example:
+
+	// abc fdg
+	// abc fdg
+	// abc fdg
+	// abc fdg
+                //   <- end first while
+	//another while
 	while(linea != ""){
 		stringstream ss(linea);
 		ss >> english >>foreign;
@@ -14,6 +23,12 @@ void solve(){
 		// msg("foreign: ", foreign);
 		std::getline(cin,linea);
 	}
+	//conjunto de palabras
+	//Ejemplo
+	// abcd
+	// abcd
+	// abcd
+	// abcd
 	while(cin>>foreign){
 		if(mapa.count(foreign) > 0)msg(mapa[foreign],"");
 		else msg("eh","");

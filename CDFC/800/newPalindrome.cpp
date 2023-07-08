@@ -34,17 +34,18 @@ void solve(){
 			cout << "NO" << endl; return;
 		}
 	}
-	int cont = 0;
-	for(auto it = mapa.begin(); it != mapa.end() ; it++){
-		if( it->second %2 != 0 ){
-			cont++;
-		}
-	}
-	if(cont < 2){
-		cout << "YES" << endl;
-		return;
-	}
-	cout << "NO" << endl;
+	// int cont = 0;
+	// for(auto it = mapa.begin(); it != mapa.end() ; it++){
+	// 	if( it->second %2 != 0 ){
+	// 		cont++;
+	// 	}
+	// }
+	// if(cont < 2){
+	// 	cout << "YES" << endl;
+	// 	return;
+	// }
+	// cout << "NO" << endl;
+	cout << "YES" << endl;
 }
 int main(){
 	// #ifndef IN_OUT

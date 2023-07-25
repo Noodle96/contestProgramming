@@ -18,17 +18,22 @@ using pll = pair<ll, ll>;
 #define fi first
 #define se second
 
-ll f(ll i, ll n){
-	ll initial = i;
-	while(i<=n) i*=2;
-	i/=2;
-	return n-i+initial;
+// void solve(){
+// 	int n;cin>>n;
+// 	cout << __builtin_popcount(n) << endl;
+// }
 
-}
 void solve(){
-	int n;cin>>n;
-	cout << __builtin_popcount(n) << endl;
+	int cont = 0;
+	int n; cin>>n;
+	while(n != 0){
+		// cout << "n: " << n << endl;
+		if(n&1)cont++;
+		n >>=1;
+	}
+	cout << cont << endl;
 }
+
 int main(){
 	solve();
 	return 0;

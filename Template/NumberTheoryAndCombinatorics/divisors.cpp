@@ -59,10 +59,10 @@ ll sumaDivisores(ll num){
 
 
 // Function to print the divisors
-void printDivisors(int n)
+void printDivisors(ll n)
 {
 	// Note that this loop runs till square root
-	for (int i=1; ll(i*i)<=sqrt(n); i++)
+	for (int i=1; i<=sqrt(n); i++)
 	{
 		if (n%i == 0)
 		{
@@ -83,9 +83,9 @@ int main()
 	ll e;
 	while(1){
 		cin>>e;
-		//printDivisors(e);
-		cout << totalDivisores(e) << endl;
-		cout << sumaDivisores(e) << endl;
+		printDivisors(e);
+		// cout << totalDivisores(e) << endl;
+		// cout << sumaDivisores(e) << endl;
 	}
 	return 0;
 }

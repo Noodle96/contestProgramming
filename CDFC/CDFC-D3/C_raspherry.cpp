@@ -29,15 +29,15 @@ void solve(){
 	int n,k; cin>>n>>k;
 	vector<int> vec(n);
 	int contPares = 0;
-	int producto = 1;
+	//int producto = 1;
 	for(int e = 0 ;e < n ; e++){
 		cin>>vec[e];
-		producto *= vec[e];
+		//producto *= vec[e];
 		if(vec[e]%2==0) contPares++;
 	}
 	if(k==4){
-		if(producto % k == 0) cout << 0 << endl;
-		else{
+	//if(producto % k == 0) cout << 0 << endl;
+		//else{
 			int pares = max(0, 2-contPares);
 			int intervalo = INT_MAX;
 			for(int e = 0 ; e < n; e++){
@@ -48,7 +48,7 @@ void solve(){
 				}
 			}
 			cout << min(pares, intervalo) << endl;
-		}
+		//}
 	}else{
 		int intervalo = INT_MAX;
 		for(int e = 0 ; e < n; e++){

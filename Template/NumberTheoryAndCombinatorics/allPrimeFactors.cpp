@@ -35,8 +35,11 @@ void primeFactors(int n)
 /* Driver code */
 int main()
 {
-	int n = 1000;
-	primeFactors(n);
+	int n;
+	while(1){
+		cin>>n;
+		primeFactors(n);
+	}
 	return 0;
 }
 

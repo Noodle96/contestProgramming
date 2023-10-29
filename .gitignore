@@ -10,4 +10,11 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
-
+a.out
+test.cpp
+launch.json
+tasks.json
+CDFC/1000/a.out
+input.txt
+output.txt
+test/

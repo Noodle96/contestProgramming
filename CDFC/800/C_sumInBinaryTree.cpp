@@ -31,7 +31,7 @@ void solve(){
 	while(n != 1){
 		// cout << "n: " << n << " ";
 		ans += n;
-		n /= 2;
+		n  = n >> 1;
 	}
 	ans  += 1;
 	cout  << ans << endl;

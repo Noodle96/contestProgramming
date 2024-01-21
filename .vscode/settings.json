@@ -73,9 +73,11 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "numbers": "cpp"
     },
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.tabCloseButton": "off",
-    "workbench.editor.wrapTabs": true
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabActionCloseVisibility": false
 }

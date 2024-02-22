@@ -28,13 +28,16 @@ double getCurrentTime() {
 int temp;
 int n,m;
 int a,b;
+const int N = 1e6+10;
+vector<int> adj[N];
+
 void solve(){
 	while(cin>>n>>m){
-		map<int,vector<int>> map;
-		for(int e = 0 ; e < n; e++){
-			cin>>temp;
-			map[temp].pb(e+1);
-		}
+		// map<int,vector<int>> map;
+		// for(int e = 0 ; e < n; e++){
+		// 	cin>>temp;
+		// 	map[temp].pb(e+1);
+		// }
 		// print map
 		// for(auto e: map){
 		// 	cout << "e->" << e.first  << ": ";
@@ -42,16 +45,31 @@ void solve(){
 		// 		cout << j << " ";
 		// 	}cout << endl;
 		// }
+	// 	for(int e = 0 ; e < m; e++){
+	// 		cin>>a>>b;
+	// 		if(a <= map[b].size()){
+	// 			cout << map[b][a-1] << endl;
+	// 		}else{
+	// 			cout << 0 << endl;
+	// 		}
+	// 	}
+	// }
+		for(int e = 0 ; e < n; e++){
+			cin>>temp;
+			adj[temp].pb(e+1);
+		}
 		for(int e = 0 ; e < m; e++){
 			cin>>a>>b;
-			if(a <= map[b].size()){
-				cout << map[b][a-1] << endl;
+			if(a <= adj[b].size()){
+				cout << adj[b][a-1] << endl;
 			}else{
 				cout << 0 << endl;
 			}
 		}
+		for(int e = 0 ; e < N; e++){
+			adj[e].clear();
+		}
 	}
-	
 }
 int main(){
 	ios_base::sync_with_stdio(false);

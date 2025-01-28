@@ -11,6 +11,7 @@
 # Built Visual Studio Code Extensions
 *.vsix
 a.out
+a.exe
 test.cpp
 launch.json
 tasks.json

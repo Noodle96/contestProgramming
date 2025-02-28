@@ -5,38 +5,48 @@ using namespace std;
 
 typedef vector<int> vi;
 
-class UnionFind {                                // OOP style
-private:
-  vi p, rank, setSize;                           // vi p is the key part
-  int numSets;
-public:
-  UnionFind(int N) {
-    p.assign(N, 0); for (int i = 0; i < N; ++i) p[i] = i;
-    rank.assign(N, 0);                           // optional speedup
-    setSize.assign(N, 1);                        // optional feature
-    numSets = N;                                 // optional feature
-  }
-
-  int findSet(int i) { return (p[i] == i) ? i : (p[i] = findSet(p[i])); }
-  bool isSameSet(int i, int j) { return findSet(i) == findSet(j); }
-
-  int numDisjointSets() { return numSets; }      // optional
-  int sizeOfSet(int i) { return setSize[findSet(i)]; } // optional
-
-  void unionSet(int i, int j) {
-    if (isSameSet(i, j)) return;                 // i and j are in same set
-    int x = findSet(i), y = findSet(j);          // find both rep items
-    if (rank[x] > rank[y]) swap(x, y);           // keep x 'shorter' than y
-    p[x] = y;                                    // set x under y
-    if (rank[x] == rank[y]) ++rank[y];           // optional speedup
-    setSize[y] += setSize[x];                    // combine set sizes at y
-    --numSets;                                   // a union reduces numSets
-  }
+class DSU{
+    private:
+        vector<int> p,rank,setSize;
+        int numSets;
+    public:
+        DSU(int N){
+            p.assign(N,0);
+            for(int i = 0 ; i < N; i++) p[i] = i;
+            rank.assign(N,0);
+            setSize.assign(N,1);
+            numSets = N;
+        }
+        int findSet(int i){
+            return (p[i] == i) ? i : (p[i] = findSet(p[i]));
+        }
+        bool isSameSet(int i, int j){
+            return findSet(i) == findSet(j);
+        }
+        int numDisjointSets(){
+            return numSets;
+        }
+        int sizeOfSet(int i){
+            return setSize[findSet(i)];
+        }
+        void unionSet(int i, int j){
+            if(isSameSet(i,j)) return;
+            int x = findSet(i), y = findSet(j);
+            if(rank[x] > rank[y]){
+                p[y] = x;
+                setSize[x] += setSize[y];
+            }else{
+                p[x] = y;
+                setSize[y] += setSize[x];
+                if(rank[x] == rank[y]) ++rank[y];
+            }
+            --numSets;
+        }
 };
 
 int main() {
   printf("Assume that there are 5 disjoint sets initially\n");
-  UnionFind UF(5); // create 5 disjoint sets
+  DSU UF(5); // create 5 disjoint sets
   printf("%d\n", UF.numDisjointSets()); // 5
   UF.unionSet(0, 1);
   printf("%d\n", UF.numDisjointSets()); // 4

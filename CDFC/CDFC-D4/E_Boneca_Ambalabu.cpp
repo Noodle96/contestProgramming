@@ -63,6 +63,10 @@ void solve() {
             bitSetCnt[j] += ((v[i] >> j) & 1);
         }
     }
+    cout << "print bitsetCnt" << endl;
+    for(auto e: bitSetCnt){
+        cout << e << " ";
+    }cout << endl;
     /*
         Para que el bit j del XOR entre v[i] y v[k] sea 1, deben ser distintos en ese bit.
         - Si v[i] tiene el bit j en 1:
@@ -87,6 +91,7 @@ void solve() {
                 sum += val * bitSetCnt[j];
             }
         }
+        cout << "sum " << sum << endl;
         ans = max(ans, sum);
     }
     cout << ans << endl;
@@ -102,3 +107,17 @@ int main(){
     while(t--) solve();
     return 0;
 }
+
+
+// 5 0101 
+// 9 1001
+// 7 0111
+
+// [0] 3
+// [1] 1
+// [2] 2
+// [3] 1
+
+// 0 + 2 + 4 + 8    => 14  
+// 0 + 2 + 8 + 16   => 26
+// 0 + 4 + 4 + 8    => 16

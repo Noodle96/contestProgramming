@@ -84,13 +84,13 @@ void solve() {
         for(int i = 0 ; i < n; i++){
             if(mask & (1 << i)){
                 idxs.insert(i);
-                // set idxs with counterclockwise
-                // the other counterclockwise
-                if(prove(idxs) % 360 == 0){
-                    cout << "YES\n";
-                    return;
-                }
             }
+        }
+        // set idxs with counterclockwise
+        // the other counterclockwise
+        if(prove(idxs) % 360 == 0){
+            cout << "YES\n";
+            return;
         }
     }
     cout << "NO\n";

@@ -27,7 +27,7 @@ double getCurrentTime() {
 }
 //know if a number is a power of 2
 bool isPowerOfTwo(int x){
-	return !(x & (x-1));
+	return x && !(x & (x-1));
 }
 
 //count the number of 1's in the binary representation of a number
@@ -132,6 +132,25 @@ void solve(){
 	// cout << "x: " << x << endl;
 	// cout << "is power of 2: " << isPowerOfTwo(x) << endl;
 
+
+
+
+	// Generar Subconjuntos con bit manipulations
+	cout << "Generacion de subconjutos\n";
+	vector<int> arr = {10, 20, 30};
+	int n = arr.size();
+	for(int mask = 0; mask < (1 << n); mask ++){
+		cout << "mask: " << bitset<8>(mask) << "\n";
+		cout << "\t{";
+		for(int i = 0 ; i < n; i++){
+			if(mask & (1 << i )){
+				cout << arr[i] << ",";
+			}
+		}
+		cout << "}\n";
+
+	}
+
 }
 
 
@@ -142,7 +161,9 @@ int main(){
 		freopen("input.txt","r",stdin);
 		freopen("output.txt","w",stdout);
 	#endif
-	int t; cin>>t;
+	int t = 1;
+	// cin>>t;
+
 	while(t--){
 		solve();
 	}

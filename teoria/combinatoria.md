@@ -66,6 +66,49 @@ El problema da una permutación inicial y m consultas, cada una revierte (revers
 
 **Idea central para reconocer este patrón en otros problemas:** cuando una operación se puede descomponer en un número conocido de transposiciones, la paridad de inversiones cambia si y solo si ese número es impar. No hace falta rastrear el arreglo completo, solo la paridad.
 
+### 6. Ejemplo numérico completo
+
+#### Ejemplo A — verificando el Lema de la sección 3 (una transposición cualquiera cambia inv en cantidad impar)
+
+Sea π = [1, 4, 2, 3] (posiciones 1..4). Inversiones de π:
+
+| par (i,j) | valores | ¿inversión? |
+|---|---|---|
+| (2,3) | 4,2 | sí |
+| (2,4) | 4,3 | sí |
+
+inv(π) = 2 (par) → sgn(π) = (-1)² = +1.
+
+Ahora aplicamos la transposición swap(p=1, q=4), es decir intercambiar los valores en las posiciones 1 y 4 (a = π(1) = 1, b = π(4) = 3). El resultado es π' = [3, 4, 2, 1].
+
+Según la prueba del lema, el cambio total en inv se descompone en: el par (p,q) mismo, más un término por cada posición intermedia k ∈ {2,3}. Verifiquemos cada pieza con números reales:
+
+- **k = 2, valor c = 4** (está *fuera* del rango [min(a,b), max(a,b)] = [1,3], porque 4 > 3):
+  - Antes: pair(p,k) = (a=1, c=4) → 1>4 falso (0). pair(k,q) = (c=4, b=3) → 4>3 verdadero (1). Suma = 1.
+  - Después: posición p ahora tiene b=3, posición q tiene a=1. pair(p,k) = (3,4) → falso (0). pair(k,q) = (4,1) → verdadero (1). Suma = 1.
+  - **Cambio = 0** (par), como predice el caso "c fuera del rango".
+
+- **k = 3, valor c = 2** (está *dentro* del rango [1,3], porque 1 < 2 < 3):
+  - Antes: pair(p,k) = (1,2) → falso (0). pair(k,q) = (2,3) → falso (0). Suma = 0.
+  - Después: pair(p,k) = (3,2) → verdadero (1). pair(k,q) = (2,1) → verdadero (1). Suma = 2.
+  - **Cambio = +2** (par), como predice el caso "c dentro del rango" (con a<b).
+
+- **Par (p,q) mismo**: antes (a=1,b=3) → 1>3 falso (0). Después (b=3 en p, a=1 en q) → 3>1 verdadero (1). **Cambio = +1** (impar).
+
+Suma total de cambios = 0 + 2 + 1 = **3 (impar)**, tal como garantiza el lema, sin importar que p y q no sean adyacentes (distancia 3).
+
+Comprobación directa contando inv(π') = [3,4,2,1]: los pares con inversión son (1,3), (1,4), (2,3), (2,4), (3,4) → inv(π') = 5. Efectivamente 5 - 2 = 3 (impar) ✓, y sgn(π') = (-1)⁵ = -1, que es exactamente -sgn(π): el signo se invirtió después de una sola transposición, tal como dice el Teorema de la sección 4.
+
+#### Ejemplo B — aplicación al problema 911D (revertir un subarreglo)
+
+Sea π = [2, 4, 1, 3, 5]. inv(π) = 3 (pares (1,3), (2,3), (2,4)) → paridad **impar**.
+
+Consulta: revertir el subarreglo [l,r] = [2,4] (longitud L=3, valores 4,1,3 → revertidos 3,1,4). Resultado: π' = [2, 3, 1, 4, 5].
+
+- Predicción: ⌊L/2⌋ = ⌊3/2⌋ = 1 transposición (solo swap(2,4); la posición central 3 queda fija). Como 1 es impar, la paridad **debe cambiar**.
+- Comprobación directa: inv(π') = pares (1,3):(2,1) sí, (2,3):(3,1) sí → inv(π') = 2, paridad **par**.
+- En efecto pasó de impar (3) a par (2) con una sola consulta, sin necesidad de recalcular todas las inversiones — solo bastaba saber que ⌊L/2⌋ = 1 es impar.
+
 ---
 
 ## Preguntas típicas de entrevistas

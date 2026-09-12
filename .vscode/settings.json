@@ -79,5 +79,8 @@
     "workbench.editor.scrollToSwitchTabs": true,
     "workbench.editor.tabCloseButton": "off",
     "workbench.editor.wrapTabs": true,
-    "workbench.editor.tabActionCloseVisibility": false
+    "workbench.editor.tabActionCloseVisibility": false,
+    "[cpp]": {
+        "editor.formatOnSave": false
+    }
 }

@@ -2,26 +2,28 @@
 ==========================================================
 |  Archivo       : B_Frog2.cpp
 |  Autor         : Russell
-|  Fecha         : 2026-09-11 19:13
+|  Fecha         : 2026-09-11
 |--------------------------------------------------------
 |  Tópicos utilizados:
     Problema : B - Frog 2 (AtCoder Educational DP Contest)
     Link     : https://atcoder.jp/contests/dp/tasks/dp_b
     Topico(s): dp (programacion dinamica) - camino minimo en un DAG, dp 1D
 
-    Idea (mismo grafo de Frog 1, con mas aristas por nodo):
-    - Cada piedra i es un nodo.
-    - Ahora cada nodo i tiene una flecha hacia i+1, i+2, ..., i+K (si existen),
-        con peso |h[i]-h[j]|. Antes (Frog 1) K era fijo en 2.
+    Idea (mismo grafo que Frog 1, pero con mas aristas por nodo):
+    - Cada piedra i sigue siendo un nodo.
+    - Ahora, desde el nodo i hay flecha hacia i+1, i+2, ..., i+K (las que
+        existan dentro del rango), cada una con peso |h[i]-h[j]|.
+        En Frog 1, K estaba fijo en 2; acá K es un dato de entrada.
     - dp[i] = costo minimo para llegar del nodo 0 al nodo i.
-    - Sigue siendo un DAG con aristas solo "hacia adelante", asi que basta
-        recorrer los nodos en orden creciente. La unica diferencia con
-        Frog 1 es que ahora, para calcular dp[i], hay que mirar hasta K
-        predecesores (i-1, i-2, ..., i-K) en vez de solo 2.
-    - Complejidad: O(N*K) en vez de O(N).
+    - Sigue siendo un DAG con aristas solo "hacia adelante": el orden
+        creciente de i sigue siendo un orden topologico valido, así que
+        se puede seguir resolviendo con un solo recorrido de izquierda
+        a derecha.
+    - La diferencia con Frog 1 esta solo en cuántos predecesores hay que
+        revisar para calcular dp[i]: ya no son 2 fijos (i-1, i-2), sino
+        hasta K (i-1, i-2, ..., i-K), cuidando no salirte del arreglo.
 ==========================================================
 */
-
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;
@@ -70,21 +72,21 @@ double getCurrentTime() {
 }
 
 void solve() {
-    int n, k;
+    int n,k;
     cin >> n >> k;
-    vector<ll> h(n);
-    for (int i = 0; i < n; i++) {
+    vector<ll> h(n,0);
+    for(int i = 0 ; i < n; i++){
         cin >> h[i];
     }
-
-    vector<ll> dp(n, INF);
+    vector<ll> dp(n,0);
     dp[0] = 0;
-    for (int i = 1; i < n; i++) {
-        // predecesores de i: i-1, i-2, ..., i-K (los que existan, j>=0)
-        for (int j = 1; j <= k; j++) {
-            if (i - j < 0) break;
-            dp[i] = min(dp[i], dp[i-j] + abs(h[i] - h[i-j]));
+    for(int i = 1; i < n; i++){
+        ll mn = INF;
+        for(int r = 1; r <= k; r++){
+            if(i >= r)
+                mn = min(dp[i-r] + abs(h[i]- h[i-r]),mn);
         }
+        dp[i] = mn;
     }
     cout << dp[n-1] << "\n";
 }

@@ -2,12 +2,28 @@
 ==========================================================
 |  Archivo       : C_Vacation.cpp
 |  Autor         : Russell
-|  Fecha         : 2026-09-11 19:45
+|  Fecha         : 2026-09-11
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - sorting
-|  - training
-|  - greedy
+    Problema : C - Vacation (AtCoder Educational DP Contest)
+    Link     : https://atcoder.jp/contests/dp/tasks/dp_c
+    Topico(s): dp (programacion dinamica) - dp con estado extendido, dp 1D
+
+    Idea (grafo en capas, no una sola fila como en Frog):
+    - Ya no alcanza con "dia i" como nodo, porque la restriccion
+        (no repetir actividad) depende de que actividad se eligio el
+        dia anterior. El estado pasa a ser (dia, ultima actividad).
+    - Dibujo: N columnas (una por dia), 3 nodos por columna (A, B, C).
+        Cada nodo (i, X) tiene flecha hacia (i+1, Y) para toda Y != X
+        (no hacia la misma fila), con peso = felicidad de Y en el dia i+1.
+    - dp[i][X] = felicidad maxima acumulada hasta el dia i, terminando
+        el dia i con la actividad X.
+    - Sigue siendo un DAG con flechas solo "hacia adelante" en el dia,
+        asi que se recorre en orden creciente de i (1 -> N): para
+        calcular dp[i][*], dp[i-1][*] ya esta listo.
+    - Caso base: dia 0 (o dia 1 si es 1-indexado), sin restriccion
+        previa, dp[0][X] = felicidad de X ese dia.
+    - Respuesta: max(dp[N-1][A], dp[N-1][B], dp[N-1][C]).
 ==========================================================
 */
 

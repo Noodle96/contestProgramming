@@ -27,6 +27,25 @@ Contest: https://atcoder.jp/contests/dp
   anterior, así que el estado pasó a ser `(día, última actividad)` — el
   grafo se vuelve "en capas" (varias filas por columna) en vez de una sola
   fila.
+- **Dos formas equivalentes de resolver la transición con "estado extendido":**
+  (a) la versión general "arrastrar" — agregar una opción `dp[i-1][misma fila]`
+  (sin sumar nada) que representa "no elijo nada nuevo en esta fila en el
+  paso i"; funciona siempre, sin importar el signo de los valores; o
+  (b) mirar explícitamente `i-1` e `i-2` (saltar como máximo 1 posición),
+  que solo es válida si se puede demostrar que nunca conviene saltear más
+  de una posición — en Basketball Exercise (ver práctica de refuerzo abajo)
+  eso vale porque todos los valores son positivos (nunca perdés por
+  insertar una elección extra). Si los valores pudieran ser negativos, la
+  opción (b) dejaría de ser válida y haría falta la (a).
+
+## Práctica de refuerzo (fuera de EDPC, mismo patrón que Vacation)
+
+- **CF 1195C - Basketball Exercise** (1400) — https://codeforces.com/problemset/problem/1195/C
+  — **AC**. Mismo patrón que Vacation pero con 2 filas en vez de 3
+  actividades. Se resolvió con la variante (b) de arriba (mirar `i-1`/`i-2`),
+  verificada a mano contra el ejemplo oficial (n=3 → 19) antes de programar.
+- **CF 698A - Vacations** (1400) — https://codeforces.com/problemset/problem/698/A
+  — **AC** (resuelto antes que Basketball Exercise).
 
 ---
 

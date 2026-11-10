@@ -1,12 +1,13 @@
 /*
 ==========================================================
-|  Archivo       : C_Minimum_Notation.cpp
+|  Archivo       : B_Game_with_string.cpp
 |  Autor         : Russell
 |  Fecha         : 2025-04-24 11:14
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - DataStructure: Stack
-|  - Implementation
+|  - data structures
+|  - stack
+|  - implementation
 |  - *1200
 ==========================================================
 */

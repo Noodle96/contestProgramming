@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : C_birthday.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-07-01 11:31
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1200
+|  - sorting
+|  - greedy
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : accurateLee.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-18 18:21
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1200
+|  - strings
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

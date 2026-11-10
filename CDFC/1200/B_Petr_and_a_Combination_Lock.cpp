@@ -5,7 +5,8 @@
 |  Fecha         : 2026-02-28 18:42
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - bitmask: generacion de subconjuntos
+|  - bitmask
+|  - subset generation
 |  - training
 |  - *1200
 ==========================================================

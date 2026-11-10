@@ -5,8 +5,10 @@
 |  Fecha         : 2025-08-24 13:58
 |--------------------------------------------------------
 |  Tópicos utilizados:
+|  - training
 |  - *1200
-|  - DFS: max len component
+|  - dfs and similar
+|  - longest component
 ==========================================================
 */
 

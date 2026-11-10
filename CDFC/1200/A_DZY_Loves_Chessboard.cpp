@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : A_DZY_Loves_Chessboard.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-01-29 16:59
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1200
+|  - dfs and similar
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

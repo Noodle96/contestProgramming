@@ -5,10 +5,10 @@
 |  Fecha         : 2025-04-24 13:20
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - DataStructure
-|  - BinarySearch
-|  - Sorting
-|  - Implementation
+|  - data structures
+|  - binary search
+|  - sorting
+|  - implementation
 |  - *1200
 ==========================================================
 */

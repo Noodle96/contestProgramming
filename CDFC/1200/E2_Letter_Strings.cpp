@@ -5,9 +5,10 @@
 |  Fecha         : 2025-04-23 19:08
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - DataStructure: Unordered_map
-|  - String
-|  - Math
+|  - data structures
+|  - unordered_map
+|  - strings
+|  - math
 |  - *1200
 ==========================================================
 */

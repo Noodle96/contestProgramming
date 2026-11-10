@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : D_Lakes_in_Berland.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-03-21 16:44
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1600
+|  - dfs and similar
+|  - greedy
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : B_Tournament.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-02-16 16:08
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - graphs
+|  - dfs and similar
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

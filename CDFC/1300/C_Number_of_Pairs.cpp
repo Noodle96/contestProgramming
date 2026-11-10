@@ -5,9 +5,9 @@
 |  Fecha         : 2025-04-25 08:56
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - BinarySearch
-|  - TwoPointers
-|  - Sorting
+|  - binary search
+|  - two pointers
+|  - sorting
 |  - *1300
 ==========================================================
 */

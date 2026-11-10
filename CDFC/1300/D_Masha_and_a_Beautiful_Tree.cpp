@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : D_Masha_and_a_Beautiful_Tree.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-01-29 18:24
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - divide and conquer
+|  - sorting
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

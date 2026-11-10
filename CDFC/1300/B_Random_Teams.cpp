@@ -6,9 +6,9 @@
 |--------------------------------------------------------
 |  Tópicos utilizados:
 |  - combinatorics
-|  - constructive algorithms
+|  - constructive algorithm
 |  - greedy
-|  - math   
+|  - math
 |  - *1300
 ==========================================================
 */

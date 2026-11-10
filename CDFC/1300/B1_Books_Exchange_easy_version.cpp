@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : B1_Books_Exchange_easy_version.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-02-16 17:59
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - dsu
+|  - graphs
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

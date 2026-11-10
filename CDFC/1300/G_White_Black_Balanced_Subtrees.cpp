@@ -1,13 +1,14 @@
  /*
 ==========================================================
-|  Archivo       : G_black_white_balanced_subtree.cpp
+|  Archivo       : G_White_Black_Balanced_Subtrees.cpp
 |  Autor         : Russell
 |  Fecha         : 2025-08-24
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - Graphs
-|  - DFS: TopologicalSort
-|  - Dynamic Programming
+|  - graphs
+|  - dfs and similar
+|  - topological sort
+|  - dp
 |  - *1300
 ==========================================================
 */

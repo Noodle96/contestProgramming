@@ -1,3 +1,16 @@
+/*
+==========================================================
+|  Archivo       : B_Alice_and_Hairdresser.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-03-13 18:10
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

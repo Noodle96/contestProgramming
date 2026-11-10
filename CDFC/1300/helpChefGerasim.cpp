@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : helpChefGerasim.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-21 15:04
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - implementation
+|  - math
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

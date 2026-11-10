@@ -5,7 +5,9 @@
 |  Fecha         : 2025-04-28 13:43
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - DataStructures: Set, Unordered_map
+|  - data structures
+|  - set
+|  - unordered_map
 |  - *1300
 ==========================================================
 */

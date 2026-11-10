@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : sortArray.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-19 23:41
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - sorting
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

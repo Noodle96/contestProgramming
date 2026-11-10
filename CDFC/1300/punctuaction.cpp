@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : punctuaction.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-25 15:36
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - strings
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

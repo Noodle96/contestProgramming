@@ -5,9 +5,10 @@
 |  Fecha         : 2025-04-28 11:17
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - BinarySearch
-|  - DataStructures: Multiset
-|  - Greedy
+|  - binary search
+|  - data structures
+|  - multiset
+|  - greedy
 |  - *1300
 ==========================================================
 */

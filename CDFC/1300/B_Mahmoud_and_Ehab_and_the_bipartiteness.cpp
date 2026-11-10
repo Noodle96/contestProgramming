@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-03 23:46
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar: bipartite check
+|  - dfs and similar
+|  - bipartite check
 |  - graphs
 |  - trees
 |  - *1300

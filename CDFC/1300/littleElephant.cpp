@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : littleElephant.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-21 13:35
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1300
+|  - sorting
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

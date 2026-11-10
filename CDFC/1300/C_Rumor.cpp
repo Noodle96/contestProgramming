@@ -5,8 +5,11 @@
 |  Fecha         : 2025-05-05 17:21
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - Graphs
-|  - DFS: components
+|  - training
+|  - *1300
+|  - graphs
+|  - dfs and similar
+|  - connected components
 |  - *1300
 ==========================================================
 */

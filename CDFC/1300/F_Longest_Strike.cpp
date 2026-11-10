@@ -7,9 +7,9 @@
 |  Tópicos utilizados:
 |  - sorting
 |  - training
+|  - *1300
 |  - greedy
 |  - data structures
-|  - Lev 2
 ==========================================================
 */
 

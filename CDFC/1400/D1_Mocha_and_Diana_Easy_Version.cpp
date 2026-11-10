@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : D1_Mocha_and_Diana_Easy_Version.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-02-16 17:59
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dsu
+|  - graphs
+|  - greedy
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

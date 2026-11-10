@@ -5,10 +5,10 @@
 |  Fecha         : 2025-09-19 18:13
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - Dfs and similar
-|  - Graphs
+|  - dfs and similar
+|  - graphs
 |  - dp
-|  - Training
+|  - training
 |  - *1400
 ==========================================================
 */

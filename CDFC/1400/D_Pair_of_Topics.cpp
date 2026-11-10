@@ -5,10 +5,10 @@
 |  Fecha         : 2025-04-28 18:57
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - DataStructures: Vector<pair<ll,ll>>
-|  - Sorting
-|  - BinarySearch
-|  - TwoPointers
+|  - data structures
+|  - sorting
+|  - binary search
+|  - two pointers
 |  - *1400
 ==========================================================
 */

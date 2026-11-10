@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : A_Learning_Languages.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-02-23 10:22
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dsu
+|  - graphs
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

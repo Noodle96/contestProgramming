@@ -5,7 +5,8 @@
 |  Fecha         : 2026-02-24 12:43
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: Diference Array
+|  - data structures
+|  - difference array
 |  - implementation
 |  - *1400
 ==========================================================

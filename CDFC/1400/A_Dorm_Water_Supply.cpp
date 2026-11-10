@@ -6,7 +6,8 @@
 |--------------------------------------------------------
 |  Tópicos utilizados:
 |  - training
-|  - dfs and similar: graph traversal
+|  - dfs and similar
+|  - graph traversal
 |  - graphs
 |  - *1400
 ==========================================================

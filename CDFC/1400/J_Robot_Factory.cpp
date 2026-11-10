@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : J_Robot_Factory.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-01-29 16:59
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dfs and similar
+|  - implementation
+|  - bitmask
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

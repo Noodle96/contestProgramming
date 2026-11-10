@@ -5,7 +5,7 @@
 |  Fecha         : 2026-03-08 18:53
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar: dfs
+|  - dfs and similar
 |  - graphs
 |  - trees
 |  - *1400

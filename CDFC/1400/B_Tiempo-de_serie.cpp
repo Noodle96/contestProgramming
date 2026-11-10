@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : B_Tiempo-de_serie.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-02-15 18:44
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dfs and similar
+|  - implementation
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

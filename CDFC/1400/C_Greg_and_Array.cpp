@@ -5,8 +5,10 @@
 |  Fecha         : 2026-02-23 17:02
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structure: diff array
-|  - dp: prfi sum
+|  - data structures
+|  - difference array
+|  - dp
+|  - prefix sum
 |  - implementation
 |  - *1400
 ==========================================================

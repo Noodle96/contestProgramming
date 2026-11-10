@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : C_Connect.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-02-16 12:23
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dfs and similar
+|  - graphs
+|  - geometry
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

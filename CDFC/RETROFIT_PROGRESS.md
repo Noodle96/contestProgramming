@@ -50,7 +50,7 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
 | 1700 | ✅ completo | 4/4 archivos |
 | 1600 | ✅ completo | 5/5 archivos |
 | 1500 | ✅ completo | 32/32 (se borró test.cpp, no trackeado) |
-| 1400 | ⏳ pendiente | 15/24 con plantilla |
+| 1400 | ✅ completo | 24/24 archivos |
 | 1300 | ⏳ pendiente | 16/38 con plantilla |
 | 1200 | ⏳ pendiente | 19/35 con plantilla |
 | 1100 | ⏳ pendiente | 7/28 con plantilla |
@@ -76,7 +76,7 @@ dificultad).
 ## Próximo paso al reanudar
 
 Seguir en orden descendente desde la primera carpeta marcada ⏳ pendiente
-(actualmente: **1400**). Regenerar el `README.md` de cada carpeta con
+(actualmente: **1300**). Regenerar el `README.md` de cada carpeta con
 `tools/gen_index.py` al terminarla (o dejar que el hook lo haga al commitear).
 
 Nota: `CDFC/1800/primeFactorization.cpp` no sigue el patrón de nombre de

@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : C_News_Distribution.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-02-16 17:59
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1400
+|  - dsu
+|  - graphs
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

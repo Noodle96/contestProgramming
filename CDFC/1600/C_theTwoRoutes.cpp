@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : C_theTwoRoutes.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-10-15 16:47
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1600
+|  - graphs
+|  - shortest path
+|  - dijkstra
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

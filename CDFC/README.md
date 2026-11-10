@@ -103,6 +103,12 @@ Lo único que importa para el índice generado es el bloque de comentario del
 inicio — el resto del boilerplate (`gcd`, `floordiv`, `ceildiv`, etc.) es
 solo utilidades que el generador ignora por completo.
 
+Este template completo está disponible como snippet de VS Code en
+[`.vscode/cpp.code-snippets`](../.vscode/cpp.code-snippets) — escribe
+`cpptemplate` y Tab en un archivo `.cpp` para insertarlo. El snippet llena
+automáticamente `Archivo` (nombre real del archivo) y `Fecha` (fecha/hora
+actual), y deja los 3 tópicos como campos editables con Tab.
+
 Reglas para la lista de tópicos:
 
 - **Tags planos, uno por línea**, en inglés, estilo Codeforces (`binary

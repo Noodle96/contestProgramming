@@ -1,0 +1,24 @@
+#!/bin/bash
+# Se ejecuta automáticamente antes de cada "git commit".
+# Si hay .cpp en staging dentro de CDFC/<dificultad>/, regenera el
+# README.md de esa carpeta y lo incluye en el mismo commit.
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root" || exit 1
+
+folders=$(git diff --cached --name-only --diff-filter=ACM \
+  | grep -E '^CDFC/[0-9]+/.*\.cpp$' \
+  | cut -d/ -f1-2 \
+  | sort -u)
+
+if [ -z "$folders" ]; then
+  exit 0
+fi
+
+for folder in $folders; do
+  echo "Regenerando índice de $folder..."
+  python3 tools/gen_index.py "$folder" || exit 1
+  git add "$folder/README.md"
+done
+
+exit 0

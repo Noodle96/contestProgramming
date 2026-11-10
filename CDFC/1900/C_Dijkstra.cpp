@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : C_Dijkstra.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-10-13 13:02
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1900
+|  - graphs
+|  - shortest path
+|  - dijkstra
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

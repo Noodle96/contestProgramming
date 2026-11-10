@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : C_roadInBerland.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-07-01 11:31
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1900
+|  - graphs
+|  - floyd warshall
+|  - shortest path
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-23 21:56
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: bit
+|  - data structures
+|  - fenwick tree
 |  - binary search
 |  - *1900
 ==========================================================

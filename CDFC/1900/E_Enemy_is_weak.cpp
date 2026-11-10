@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-24 11:27
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: fenwick tree
+|  - data structures
+|  - fenwick tree
 |  - path compression
 |  - combinatorics
 |  - *1900

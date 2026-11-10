@@ -5,7 +5,7 @@
 | Problema | Tópicos |
 |---|---|
 | [C_Checkposts](C_Checkposts.cpp) | graphs, strongly connected components, dfs and similar, combinatorics, modular arithmetic |
-| [C_Number_of_Ways](C_Number_of_Ways.cpp) | two pointer, prefix sum |
+| [C_Number_of_Ways](C_Number_of_Ways.cpp) | two pointers, prefix sum |
 | [D_Substring](D_Substring.cpp) | graphs, dfs and similar, cycle check, dp |
 | [G_Chimpanzini_Bananini](G_Chimpanzini_Bananini.cpp) | data structures, queue, implementation, math |
 
@@ -27,4 +27,4 @@
 | prefix sum | [C_Number_of_Ways](C_Number_of_Ways.cpp) |
 | queue | [G_Chimpanzini_Bananini](G_Chimpanzini_Bananini.cpp) |
 | strongly connected components | [C_Checkposts](C_Checkposts.cpp) |
-| two pointer | [C_Number_of_Ways](C_Number_of_Ways.cpp) |
+| two pointers | [C_Number_of_Ways](C_Number_of_Ways.cpp) |

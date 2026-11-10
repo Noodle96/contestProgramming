@@ -37,8 +37,8 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
   lo agrega al mismo commit. Activado vía `git config core.hooksPath
   scripts/hooks` (ya configurado en esta máquina; en un clon nuevo hay que
   volver a correr ese comando).
-- Falta: `CDFC/README.md` (guía central explicando todo esto para lectura
-  humana).
+- [CDFC/README.md](README.md) — guía central para lectura humana (template,
+  generador, hook, setup en máquina nueva). Ya escrita.
 
 ## Estado por carpeta (plantilla completa = todos los .cpp con el bloque de tópicos)
 

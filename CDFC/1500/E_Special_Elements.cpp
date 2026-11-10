@@ -7,9 +7,9 @@
 |  Tópicos utilizados:
 |  - brute force
 |  - implementation
-|  - Data structure: unordered_map
+|  - data structures
+|  - unordered_map
 |  - *1500
-|  - Lev 2
 ==========================================================
 */
 

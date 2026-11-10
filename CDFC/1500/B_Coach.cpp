@@ -5,8 +5,9 @@
 |  Fecha         : 2026-03-06 20:30
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar: # components
-|  - graphs 
+|  - dfs and similar
+|  - connected components
+|  - graphs
 |  - *1500
 ==========================================================
 */

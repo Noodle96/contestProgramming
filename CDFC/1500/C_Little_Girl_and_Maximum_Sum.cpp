@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-25 12:18
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: fenwick tree
+|  - data structures
+|  - fenwick tree
 |  - sorting
 |  - *1500
 ==========================================================

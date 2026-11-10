@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : D_Secret_Passwords.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-03-13 18:10
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1500
+|  - graphs
+|  - dfs and similar
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

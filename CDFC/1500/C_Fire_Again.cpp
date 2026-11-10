@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : C_Fire_Again.cpp
+|  Autor         : Russell
+|  Fecha         : 2024-02-18 11:45
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1500
+|  - graphs
+|  - bfs
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

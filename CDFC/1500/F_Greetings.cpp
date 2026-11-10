@@ -5,7 +5,8 @@
 |  Fecha         : 2026-09-04
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: bit
+|  - data structures
+|  - fenwick tree
 |  - sorting
 |  - *1500
 ==========================================================

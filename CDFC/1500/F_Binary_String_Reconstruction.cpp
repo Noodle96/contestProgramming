@@ -5,9 +5,9 @@
 |  Fecha         : 2026-02-07 14:52
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - constructive algorith
+|  - constructive algorithm
+|  - training
 |  - *1500
-|  - Training
 ==========================================================
 */
 

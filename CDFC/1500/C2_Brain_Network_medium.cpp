@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-06 23:42
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar: diameter of tree
+|  - dfs and similar
+|  - tree diameter
 |  - graphs
 |  - trees
 |  - *1500

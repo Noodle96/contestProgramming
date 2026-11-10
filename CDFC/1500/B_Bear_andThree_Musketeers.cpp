@@ -5,7 +5,7 @@
 |  Fecha         : 2026-03-08 16:34
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar:
+|  - dfs and similar
 |  - graphs
 |  - brute force
 |  - *1500

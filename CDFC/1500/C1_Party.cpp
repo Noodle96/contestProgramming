@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : C1_Party.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-03-21 10:27
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1500
+|  - dsu
+|  - graphs
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

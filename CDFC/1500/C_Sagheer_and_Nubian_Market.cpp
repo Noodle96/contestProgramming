@@ -7,6 +7,8 @@
 |  Tópicos utilizados:
 |  - binary search
 |  - sorting
+|  - training
+|  - *1500
 ==========================================================
 */
 

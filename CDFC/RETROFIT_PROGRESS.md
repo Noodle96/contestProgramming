@@ -49,7 +49,7 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
 | 1800 | ✅ completo | 4/4 archivos |
 | 1700 | ✅ completo | 4/4 archivos |
 | 1600 | ✅ completo | 5/5 archivos |
-| 1500 | ⏳ pendiente | 21/32 con plantilla |
+| 1500 | ✅ completo | 32/32 (se borró test.cpp, no trackeado) |
 | 1400 | ⏳ pendiente | 15/24 con plantilla |
 | 1300 | ⏳ pendiente | 16/38 con plantilla |
 | 1200 | ⏳ pendiente | 19/35 con plantilla |
@@ -58,33 +58,25 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
 | 900 | ⏳ pendiente | 0/21 con plantilla |
 | 800 | ⏳ pendiente | ~6/100 con plantilla |
 
-## Hallazgo pendiente: normalización de tópicos antiguos
+## Normalización de tópicos antiguos (decisión tomada: arreglar sobre la marcha)
 
-Al revisar `1900` se encontró que ~35 archivos en otras carpetas (1000, 1200,
-1300, 1400, 1500, 1700, 1800, 1900, CDFC-D2) ya tienen plantilla pero con
-tópicos mal formados, que romperían el agrupamiento del índice:
-
-- Formato compuesto con `:` (ej. `dfs and similar: cycle check`) — mismo
-  problema que ya corregimos aquí.
-- Mayúsculas inconsistentes (`DFS`, `Dfs`, `dfs and similar`).
-- Espaciado/forma inconsistente (`DataStructures`, `Data Structure`, `data
-  structures`).
-- Separadores no estándar: `->` (`fenwick tree->range update`), `|` para dos
-  tópicos en una línea (`brute force | data structures: bit`), comas dentro
-  del `:` (`cycle check, topological order`).
-- Términos en español mezclados con inglés (`Orden Topologico`, `generacion
-  de subconjuntos`).
-- Mismo concepto con nombres distintos (`bit` vs `fenwick tree` — ya
-  estandarizado a `fenwick tree` dentro de `1900`).
-
-Pendiente decidir: ¿corregir todo en una pasada dedicada, o ir arreglando
-cada caso cuando lleguemos naturalmente a su carpeta en el orden
-descendente? (1500, 1400, 1300, 1200, 1000, 1700, 1800 tienen casos).
+Desde `1900` se viene encontrando que archivos antiguos ya con plantilla
+tienen tópicos mal formados, que fragmentarían el índice si no se corrigen:
+formato compuesto con `:`, mayúsculas inconsistentes, separadores raros
+(`->`, `|`, comas), términos en español, mismo concepto con nombres
+distintos (`bit`/`bruteforce` vs `fenwick tree`/`brute force`), tags que
+faltan (`training`/`*NNNN`), y hasta un header copiado con el nombre y
+dificultad de otro archivo (`D2_Magic_Powderr.cpp` tenía el header de
+`D1_Magic_Powder.cpp`). Se corrige cada caso al llegar a su carpeta en el
+orden descendente — ya resuelto en 1900, 1800, 1700, 1500 (1600 no tenía
+casos). Carpetas que aún faltan y ya se sabe que tienen casos: **1400,
+1300, 1200, 1000** (CDFC-D2 queda fuera de alcance, no es carpeta de
+dificultad).
 
 ## Próximo paso al reanudar
 
 Seguir en orden descendente desde la primera carpeta marcada ⏳ pendiente
-(actualmente: **1700**). Regenerar el `README.md` de cada carpeta con
+(actualmente: **1400**). Regenerar el `README.md` de cada carpeta con
 `tools/gen_index.py` al terminarla (o dejar que el hook lo haga al commitear).
 
 Nota: `CDFC/1800/primeFactorization.cpp` no sigue el patrón de nombre de

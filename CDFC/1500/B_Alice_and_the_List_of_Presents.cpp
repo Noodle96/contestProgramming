@@ -5,7 +5,8 @@
 |  Fecha         : 2026-03-10 15:20
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - combinatorics: binary exponentiation
+|  - combinatorics
+|  - binary exponentiation
 |  - math
 |  - *1500
 ==========================================================

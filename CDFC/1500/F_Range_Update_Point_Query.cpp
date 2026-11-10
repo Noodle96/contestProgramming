@@ -5,7 +5,9 @@
 |  Fecha         : 2026-03-25 17:46
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: fenwick tree->range update
+|  - data structures
+|  - fenwick tree
+|  - range update
 |  - brute force
 |  - *1500
 ==========================================================

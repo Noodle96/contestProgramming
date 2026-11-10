@@ -5,10 +5,12 @@
 |  Fecha         : 2026-03-08 11:17
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - dfs and similar: cycle check, topological order
+|  - dfs and similar
+|  - cycle check
+|  - topological order
 |  - graphs
 |  - implementation
-|  - *special problem
+|  - special problem
 |  - *1500
 ==========================================================
 */

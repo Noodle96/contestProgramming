@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : kefaAndPark.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-07-08 13:28
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1500
+|  - trees
+|  - dfs and similar
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl

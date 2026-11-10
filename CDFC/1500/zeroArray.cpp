@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : zeroArray.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-05-02 18:37
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1500
+|  - math
+|  - greedy
+==========================================================
+*/
+
 #include<iostream>
 using namespace std;
 int main(){

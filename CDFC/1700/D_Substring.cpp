@@ -5,9 +5,10 @@
 |  Fecha         : 2025-05-05 19:34
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - Graphs
-|  - DFS: Cycle check
-|  - Dynamic Programming
+|  - graphs
+|  - dfs and similar
+|  - cycle check
+|  - dp
 |  - *1700
 ==========================================================
 */

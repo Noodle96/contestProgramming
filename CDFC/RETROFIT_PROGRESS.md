@@ -47,7 +47,7 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
 | 2200 | ✅ completo | 1/1 archivo |
 | 1900 | ✅ completo | 4/4 archivos |
 | 1800 | ✅ completo | 4/4 archivos |
-| 1700 | ⏳ pendiente | 3/4 con plantilla |
+| 1700 | ✅ completo | 4/4 archivos |
 | 1600 | ✅ completo | 5/5 archivos |
 | 1500 | ⏳ pendiente | 21/32 con plantilla |
 | 1400 | ⏳ pendiente | 15/24 con plantilla |

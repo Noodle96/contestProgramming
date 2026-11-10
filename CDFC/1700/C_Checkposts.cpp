@@ -1,3 +1,20 @@
+/*
+==========================================================
+|  Archivo       : C_Checkposts.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-03-25 12:45
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1700
+|  - graphs
+|  - strongly connected components
+|  - dfs and similar
+|  - combinatorics
+|  - modular arithmetic
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 using namespace std;

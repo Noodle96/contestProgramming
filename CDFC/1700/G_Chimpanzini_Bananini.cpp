@@ -5,10 +5,11 @@
 |  Fecha         : 2025-04-23 15:41
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - Data Structure: Queue
-|  - Implementation
-|  - Math
-   - *1700
+|  - data structures
+|  - queue
+|  - implementation
+|  - math
+|  - *1700
 ==========================================================
 */
 

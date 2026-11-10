@@ -5,7 +5,9 @@
 |  Fecha         : 2026-09-07 11:49
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - brute force | data structures: bit
+|  - brute force
+|  - data structures
+|  - fenwick tree
 |  - training
 |  - math
 |  - *1800

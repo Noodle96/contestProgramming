@@ -46,7 +46,7 @@ por `tools/gen_index.py`. Se avanza **de mayor a menor dificultad** (2200 →
 |---|---|---|
 | 2200 | ✅ completo | 1/1 archivo |
 | 1900 | ✅ completo | 4/4 archivos |
-| 1800 | ⏳ pendiente | 3/4 con plantilla |
+| 1800 | ✅ completo | 4/4 archivos |
 | 1700 | ⏳ pendiente | 3/4 con plantilla |
 | 1600 | ✅ completo | 5/5 archivos |
 | 1500 | ⏳ pendiente | 21/32 con plantilla |
@@ -84,5 +84,11 @@ descendente? (1500, 1400, 1300, 1200, 1000, 1700, 1800 tienen casos).
 ## Próximo paso al reanudar
 
 Seguir en orden descendente desde la primera carpeta marcada ⏳ pendiente
-(actualmente: **1800**). Regenerar el `README.md` de cada carpeta con
+(actualmente: **1700**). Regenerar el `README.md` de cada carpeta con
 `tools/gen_index.py` al terminarla (o dejar que el hook lo haga al commitear).
+
+Nota: `CDFC/1800/primeFactorization.cpp` no sigue el patrón de nombre de
+problema de CF y tiene atribución de GeeksforGeeks en el código — se le puso
+plantilla igual (training, *1800, math, number theory) sin confirmación
+explícita de Russell sobre si debería tratarse distinto. Revisar si hace
+falta revertir ese criterio.

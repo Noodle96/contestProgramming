@@ -5,7 +5,8 @@
 |  Fecha         : 2026-09-07 16:17
 |--------------------------------------------------------
 |  Tópicos utilizados:
-|  - data structures: bit
+|  - data structures
+|  - fenwick tree
 |  - training
 |  - math
 |  - *1800

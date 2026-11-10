@@ -1,3 +1,17 @@
+/*
+==========================================================
+|  Archivo       : primeFactorization.cpp
+|  Autor         : Russell
+|  Fecha         : 2023-04-13 12:47
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *1800
+|  - math
+|  - number theory
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 void primeFactors(int n){

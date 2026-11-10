@@ -1,3 +1,18 @@
+/*
+==========================================================
+|  Archivo       : C_Circular_RMQ.cpp
+|  Autor         : Russell
+|  Fecha         : 2025-02-27 15:03
+|--------------------------------------------------------
+|  Tópicos utilizados:
+|  - training
+|  - *2200
+|  - segment tree
+|  - lazy propagation
+|  - range queries
+==========================================================
+*/
+
 #include <bits/stdc++.h>
 #define all(x) x.begin(),x.end()
 #define msg(str,str2) cout << str << str2<< endl
